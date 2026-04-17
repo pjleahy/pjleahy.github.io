@@ -14,7 +14,6 @@ nav a.active {
 }
 
 header {
-    font-family: sans-serif;
     background-color: #002147;
     color: white;
     padding: 1em;
@@ -22,7 +21,7 @@ header {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Merriweather", Georgia, serif;
     margin-left: 20px;
     background-color: #f4f4f4;
 }
