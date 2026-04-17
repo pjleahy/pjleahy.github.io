@@ -13,7 +13,6 @@ body {
 header {
     background-color: var(--paper);
     color: var(--ink);
-    padding: 1em;
     text-align: left;
 }
 
@@ -41,10 +40,29 @@ img {
     height: auto;
 }
 
-.cover-photo {
-    height: 500px;
+.scrapbook {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75em;
+    align-items: start;
+    margin-top: 1em;
+    margin-right: 20px;
+}
+
+.scrapbook img {
+    width: 100%;
+    height: auto;
     display: block;
-    margin-left: 0;
+    margin: 0;
+    border: 1px solid var(--ink);
+}
+
+@media (max-width: 700px) {
+    .scrapbook { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 400px) {
+    .scrapbook { grid-template-columns: 1fr; }
 }
 
 .content-wrapper {
